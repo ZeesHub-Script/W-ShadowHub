@@ -2364,15 +2364,15 @@ elseif getexecutorname then
 end
 if executorName then
     Tabs.Info:AddParagraph({
-        Title="Client đang sử dụng",
+        Title="Current Client",
         Content=executorName
     })
 end
     Tabs.Info:AddButton({
-    Title="Tạo bởi @HLuuVN",
-    Description="Link User Roblox",
+    Title="By ZeesVnHub Team",
+    Description="Link Discord",
     Callback=function()
-        setclipboard(tostring("https://www.roblox.com/vi/users/2764749122/profile"))
+        setclipboard(tostring("https://discord.gg/WYMXvrnpz2"))
     end
 })
 _G.FastAttackVxeze_Mode="Super Fast Attack"
@@ -6454,21 +6454,21 @@ ToggleF:OnChanged(function(Value)
     end)
 Options.ToggleF:SetValue(true)
 local Usser = Tabs.Info:AddParagraph({
-    Title="Thông tin",
+    Title="Info",
     Content="\n"..
-        "Tên : "..game.Players.LocalPlayer.DisplayName.." (@"..game.Players.LocalPlayer.Name..")\n"..
-        "Cấp độ : "..game:GetService("Players").LocalPlayer.Data.Level.Value.."\n"..
+        "Name : "..game.Players.LocalPlayer.DisplayName.." (@"..game.Players.LocalPlayer.Name..")\n"..
+        "Level : "..game:GetService("Players").LocalPlayer.Data.Level.Value.."\n"..
         "Beli : "..game:GetService("Players").LocalPlayer.Data.Beli.Value.."\n"..
         "Fragments : "..game:GetService("Players").LocalPlayer.Data.Fragments.Value.."\n"..
         "Bounty : "..game:GetService("Players").LocalPlayer.leaderstats["Bounty/Honor"].Value.."\n"..
-        "Máu : "..game.Players.LocalPlayer.Character.Humanoid.Health.."/"..game.Players.LocalPlayer.Character.Humanoid.MaxHealth.."\n"..
-        "Năng lượng : "..game.Players.LocalPlayer.Character.Energy.Value.."/"..game.Players.LocalPlayer.Character.Energy.MaxValue.."\n"..
-        "Tộc : "..game:GetService("Players").LocalPlayer.Data.Race.Value.."\n"..
-        "Trái : "..game:GetService("Players").LocalPlayer.Data.DevilFruit.Value.."\n"..
+        "HP : "..game.Players.LocalPlayer.Character.Humanoid.Health.."/"..game.Players.LocalPlayer.Character.Humanoid.MaxHealth.."\n"..
+        "Mana : "..game.Players.LocalPlayer.Character.Energy.Value.."/"..game.Players.LocalPlayer.Character.Energy.MaxValue.."\n"..
+        "Race : "..game:GetService("Players").LocalPlayer.Data.Race.Value.."\n"..
+        "Fruit : "..game:GetService("Players").LocalPlayer.Data.DevilFruit.Value.."\n"..
         ""
 })
 local Time = Tabs.Status:AddParagraph({
-    Title="Thời gian",
+    Title="Time",
     Content=""
 })
 local function UpdateLocalTime()
@@ -6497,7 +6497,7 @@ spawn(function()
     end
 end)
 local ServerTime = Tabs.Status:AddParagraph({
-    Title="Thời gian chơi server",
+    Title="Time In Server",
     Content=""
 })
 local function UpdateServerTime()
