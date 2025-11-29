@@ -176,7 +176,7 @@ hookfunction(require(game:GetService("ReplicatedStorage").Effect.Container.Respa
 local Fluent = loadstring(game:HttpGet("https://raw.githubusercontent.com/ZeesHub-Script/W-ShadowHub/refs/heads/main/Fluent.lua"))()
 Window = Fluent:CreateWindow({
     Title = "W-ShadowHub V1.0",
-    SubTitle="[Premium]  by ZeesVn Hub Team", 
+    SubTitle="[Premium]  by Dukee Hub [ https://discord.gg/WYMXvrnpz2 ]", 
     TabWidth=155, 
     Theme="Amethyst",
     Acrylic=true,
